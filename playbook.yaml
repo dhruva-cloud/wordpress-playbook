@@ -1,0 +1,11 @@
+---
+ - hosts: servers
+   gather_facts: False
+   tasks:
+ - hosts: servers
+
+   roles:
+     - server
+     - php
+     - mysql
+     - wordpress
